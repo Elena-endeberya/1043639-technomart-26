@@ -43,21 +43,50 @@
       <span><a href="">Инструмент</a></span>
       <span><a href="">Перфораторы</a></span>
       <h2>Перфораторы</h2>
-      <section class="manufacturers">
-        <h3>Производители</h3>
-        <input type="checkbox" name="Bosch" value="Bosch" checked>
-        <input type="checkbox" name="Interscol" value="Интерскол">
-        <input type="checkbox" name="Makita" value="Makita" checked>
-        <input type="checkbox" name="Dewalt" value="Dewalt">
-        <input type="checkbox" name="Hitachi" value="Hitachi">
-      </section>
-      <section class="supply">
-        <h3>Питание</h3>
-        <input type="radio" name="rechargeable" value="Аккумуляторные" checked>
-        <input type="radio" name="network" value="Сетевые">
-        <button type="submit">Показать</button>
-      </section>
-      <section class="catalog">
+      <section class="filters">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
+                <label for="filter-Bosch">Bosch</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interscol" id="filter-Interscol">
+                <label for="filter-Interscol">Interscol</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                <label for="filter-Makita">Makita</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
+                <label for="filter-Dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                <label for="filter-Hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание</legend>
+            <ul>
+              <li  class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-radio" type="radio" name="supply" value="Аккумуляторные" id="filter-rechargeable" checked>
+                <label for="filter-rechargeable">Аккумуляторные</label>
+              </li>
+              <li  class="filter-option">
+                <input class="vissually-hidden filter-input filter-input-radio" type="radio" name="supply" value="Сетевые" id="filter-network">
+                <label for="filter-network">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
+       </section>
+       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
             <h4>Перфоратор Bosch BFG 3000</h4>
