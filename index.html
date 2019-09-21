@@ -101,21 +101,21 @@
       </p>
    </footer>
    <section class="modal modal-login">
-     <h2>Обратная связь</h2>
-     <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+     <h2 class="vissually-hidden">Обратная связь</h2>
+     <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
        <p>
          <label class="vissually-hidden" for="user-name">Ваше имя:</label>
-         <input class="login-icon-user" id="user-name" type="text" placeholder="Имя Фамилия">
+         <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
        </p>
        <p>
          <label class="vissually-hidden" for="user-email">Ваш e-mail:</label>
-         <input class="login-icon-password" id="user-email" type="text" placeholder="email@example.com">
+         <input id="user-email" type="text" name="email" placeholder="email@example.com">
        </p>
        <p>
          <label class="vissually-hidden" for="user-letter">Текст письма:</label>
-         <input class="login-icon-user" id="user-letter" type="text" placeholder="В свободной форме">
+         <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
        </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="modal-form-button button" type="submit">Отправить</button>
      </form>
      <button class="modal-close" type="button">Закрыть</button>
    </section>
