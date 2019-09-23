@@ -39,8 +39,8 @@
       </nav>
     </header>
     <main>
-      <span><a href="index.html">Главная</a></span>
-      <span><a href="catalog.html">Каталог</a></span>
+      <span><a href="">Главная</a></span>
+      <span><a href="">Каталог</a></span>
       <span><a href="">Инструмент</a></span>
       <span><a href="">Перфораторы</a></span>
       <h2>Перфораторы</h2>
@@ -49,7 +49,7 @@
           <fieldset>
             <legend>Цена</legend>
             <label for="price">0
-              <input type="range" name="price" value="" min="0" max="30000">30000
+              <input type="range" id="price" min="0" max="30000">30000
             </label>
           </fieldset>
           <fieldset>
@@ -106,6 +106,14 @@
              <a href="">По функционалу</a>
            </li>
          </ul>
+         <ul>
+           <li class="sorting-item">
+             <a href="">По возрастанию</a>
+           </li>
+           <li class="sorting-item">
+             <a href="">По убыванию</a>
+           </li>
+         </ul>
        </section>
        <section class="catalog">
         <ul class="catalog-list">
@@ -136,13 +144,13 @@
           <li class="catalog-item">
             <h4>Перфоратор Bosch BFG 2000</h4>
             <p class="catalog-item-price">
-              <label for="">New</label>
               <b>12 500Р.</b>
             </p>
             <div>
               <a href="">Купить</a>
               <a href="">В закладки</a>
             </div>
+            <img src="img/new_flag.svg" alt="Новый товар в каталоге">
           </li>
           <li class="catalog-item">
             <h4>Перфоратор Bosch BFG 3000</h4>
@@ -158,9 +166,7 @@
           </li>
           <li class="catalog-item">
             <h4>Перфоратор Bosch BFG 6000</h4>
-            <label for="Bosch BFG 6000/5">New
-              <img src="img/hammer-drill-2.jpg" width="218" height="170" id="Bosch BFG 6000/5" alt="Перфоратор Bosch BFG 6000">
-            </label>
+            <img src="img/hammer-drill-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
             <p class="catalog-item-price">
               <del>30 500 Р.</del>
               <b>25 500Р.</b>
@@ -169,6 +175,7 @@
               <a href="">Купить</a>
               <a href="">В закладки</a>
             </div>
+            <img src="img/new_flag.svg" alt="Новый товар в каталоге">
           </li>
           <li class="catalog-item">
             <h4>Перфоратор Bosch BFG 2000</h4>
@@ -183,9 +190,7 @@
           </li>
           <li class="catalog-item">
             <h4>Перфоратор Bosch BFG 3000</h4>
-            <label for="Bosch BFG 3000/7">New
-              <img src="img/hammer-drill-1.jpg" width="218" height="170" id="Bosch BFG 3000/7" alt="Перфоратор Bosch BFG 3000">
-            </label>
+              <img src="img/hammer-drill-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
             <p class="catalog-item-price">
               <del>22 500 Р.</del>
               <b>15 500Р.</b>
@@ -194,6 +199,7 @@
               <a href="">Купить</a>
               <a href="">В закладки</a>
             </div>
+            <img src="img/new_flag.svg" alt="Новый товар в каталоге">
           </li>
           <li class="catalog-item">
             <h4>Перфоратор Bosch BFG 6000</h4>
@@ -231,7 +237,6 @@
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-
       </section>
     </main>
     <footer>
@@ -285,6 +290,6 @@
         <button type="button" name="button">Продолжить покупки</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть">X</button>
-    </section
+    </section>
    </body>
 </html>
