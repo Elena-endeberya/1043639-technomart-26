@@ -9,17 +9,20 @@
  </head>
  <body>
    <header class="main-header">
-     <section>
-       <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
+     <section class="menu-header">
        <a href="">Поиск</a>
-       <a href="">Закладки</a>
-       <a href="">Корзина</a>
+       <a href="">Закладки: 0</a>
+       <a href="">Корзина: 0</a>
        <a href="">Оформить заказ</a>
+       <div class="logo-header">
+         <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
+       </div>
+
      </section>
-     <section>
+     <section class="header-body">
        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-       <p>
-         <a href="tel:78126660266">+7 (812) 666-02-66</a>
+       <p class="adress">
+         <a href="tel:78126660266" class="phone-number">+7 (812) 666-02-66</a>
          г.Санкт-Перербург, Б. Конюшенная д. 19/8
        </p>
        <a href="">Войти</a>
@@ -39,21 +42,21 @@
    </header>
    <main>
      <section class="user-menu">
-       <ul>
-         <li>Материалы
+       <ul class="user-menu-box">
+         <li class="materials">Материалы
            <a href="">На любой вкус</a>
           <img src="img/new_flag.svg" alt="Новинки в каталоге материалы">
          </li>
-         <li>Инструмент
+         <li class="tool">Инструмент
            <a href="">На все случаи</a>
          </li>
-         <li>Техника
+         <li class="equipment">Техника
            <a href="">Для стройки</a>
          </li>
-         <li>Скидки 50%
+         <li class="discounts">Скидки 50%
            <a href="">На 350 товаров</a>
          </li>
-         <li>Доставка
+         <li class="delivery">Доставка
             <a href="">Бесплатнро</a>
          </li>
        </ul>
@@ -75,8 +78,8 @@
        <button class="button gallery-button gallery-button-switch-2" type="button">Точка 2</button>
      </section>
      <section class="catalog">
-       <h2>Популярные товары</h2>
-       <a href="">Все популярные товары</a>
+       <h2 class="catalog-header">Популярные товары</h2>
+       <a href="" class="all-catalog-list">Все популярные товары</a>
        <ul class="catalog-list">
          <li class="catalog-item">
            <h3>Перфоратор Bosch BFG 9000</h3>
@@ -129,8 +132,8 @@
        </ul>
      </section>
      <section class="manufacturers">
-       <h2>Популярные производители</h2>
-       <a href="">Все популярные производители</a>
+       <h2 class="manufacturers-header">Популярные производители</h2>
+       <a href="" class="all-manufacturers-list">Все популярные производители</a>
        <ul class="manufacturers-list">
          <li class="manufacturers-item">
            <img src="img/bosch.png" alt="Производитель Bosch">
@@ -163,9 +166,9 @@
        <p>Хороший интернет-магазин отличается от плохого не только ценами!
        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
        <div class="slider-service">
-         <a href="">Доставка</a>
-         <a href="">Гарантия</a>
-         <a href="">Кредит</a>
+         <a href="" class="slider-service slider-service-active">Доставка</a>
+         <a href="" class="">Гарантия</a>
+         <a href="" class="">Кредит</a>
        </div>
        <h3>Доставка</h3>
        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -179,7 +182,7 @@
        <p>Залезть в долговую яму стало проще!
        Кредитные консультанты придут вам на помощь.</p>
      </section>
-     <section>
+     <section class="company">
        <h2>Компания "Техномарт"</h2>
        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -192,7 +195,7 @@
        </ul>
        <a href="">Подробнее о компании</a>
      </section>
-     <section>
+     <section class="contacts">
        <h2>Контакты</h2>
        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
        <a>
@@ -201,49 +204,53 @@
        <a href="">Заблудились? Напишите нам!</a>
      </section>
    </main>
-   <footer>
-     <section>
-       <a>
-         <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
-       </a>
-       <ul>
-         <li><a href="">Компания</a></li>
-         <li><a href="">Новости</a></li>
-         <li><a href="catalog.html">Каталог</a></li>
-         <li><a href="">Доставка</a></li>
-         <li><a href="">Контакты</a></li>
-       </ul>
-     </section>
-     <section>
-       <p>г.Санкт-Перербург, Б. Конюшенная д. 19/8<br>
-         <a href="tel:78126660266">+7 (812) 666-02-66</a>
-       </p>
-       <ul>
-         <li><a href="">Материалы</a></li>
-         <li><a href="">Техника</a></li>
-         <li><a href="">Инструмент</a></li>
-         <li><a href="">Спецпредложения</a></li>
-       </ul>
-     </section>
-     <div>
-       <ul>
-         <li><a href="">Вконтакте</a></li>
-         <li><a href="">Фейсбук</a></li>
-         <li><a href="">Инстаграмм</a></li>
-       </ul>
+   <footer class="main-footer">
+     <div class="footer-navigation">
+       <section>
+         <a class="logo-footer">
+           <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
+         </a>
+         <ul class="footer-menu">
+           <li><a href="">Компания</a></li>
+           <li><a href="">Новости</a></li>
+           <li><a href="catalog.html">Каталог</a></li>
+           <li><a href="">Доставка</a></li>
+           <li><a href="">Контакты</a></li>
+         </ul>
+       </section>
+       <section class="footer-adress">
+         <p>г.Санкт-Перербург, Б. Конюшенная д. 19/8<br>
+           <a href="tel:78126660266">+7 (812) 666-02-66</a>
+         </p>
+         <ul class="footer-user-menu">
+           <li><a href="">Материалы</a></li>
+           <li><a href="">Техника</a></li>
+           <li><a href="">Инструмент</a></li>
+           <li><a href="">Спецпредложения</a></li>
+         </ul>
+       </section>
      </div>
-     <p>
-       &copy; 2010-2017 Компания Техномарт<br>
-       Все права защищены
-     </p>
-     <p>
-       Обратная связь:
-       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-     </p>
-     <p>
-       Разработано:
-       <a href="https://htmlacademy.ru">HTML Academy</a>
-     </p>
+     <div class="footer-contacts">
+       <div  class="footer-social">
+         <ul>
+           <li><a href="">Вконтакте</a></li>
+           <li><a href="">Фейсбук</a></li>
+           <li><a href="">Инстаграмм</a></li>
+         </ul>
+       </div>
+       <p  class="footer-copyright">
+         &copy; 2010-2017 Компания Техномарт<br>
+         Все права защищены
+       </p>
+       <p>
+         Обратная связь:
+         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+       </p>
+       <p>
+         Разработано:
+         <a href="https://htmlacademy.ru">HTML Academy</a>
+       </p>
+     </div>
    </footer>
    <section class="modal modal-login">
      <h2 class="vissually-hidden">Обратная связь</h2>
