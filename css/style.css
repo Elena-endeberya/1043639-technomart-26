@@ -8,6 +8,7 @@ body {
   color: #ffffff;
   background-color: #f4f7f9;
   background-position: top center;
+
 }
 
 .page-title {
@@ -15,7 +16,9 @@ body {
   font-size: 16px;
   font-style: italic;
   text-align: left;
-  line-height: 23px;
+  max-width: 196px;
+  line-height: 1.44;
+  padding-left: 53px;
 }
 
 a {
@@ -24,10 +27,12 @@ a {
 
 .main-header {
   background-color: #f4f7f9;
+  min-height: 320px;
 }
 
 .menu-header {
   background-color: #293449;
+  display: flex;
 }
 
 .menu-header a{
@@ -41,7 +46,7 @@ a {
   height: 47px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  margin-left: 170px;
+  margin-left: 130px;
   text-align: center;
   vertical-align: middle;
 }
@@ -52,6 +57,15 @@ a {
 
 .logo-header:active {
   background-color: #ba2732;
+}
+
+.header-body {
+  display: flex;
+  min-height: 158;
+  margin-left: 130px;
+  margin-right: 130px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .find{
@@ -102,6 +116,7 @@ a {
 
 .make-order:active {
   background-color: #518534;
+  margin-right: 130px;
 }
 
 .adress {
@@ -161,6 +176,15 @@ a {
 .main-navigation {
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.main-navigation ul{
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  align-items: center;
 }
 
 .main-navigation li {
@@ -223,6 +247,18 @@ a {
 .adress a {
   font-size: 21px;
   color: #ee3643;
+}
+
+.user-menu-box {
+  margin-left: 130px;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 0;
 }
 
 .user-menu-box li {
@@ -296,9 +332,12 @@ a {
   background-color: #ba2732;
 }
 
-.catalog {
+/*.catalog {
   background-color: #f9f5f0;
-}
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}*/
 
 .catalog-header,
 .manufacturers-header {
@@ -324,6 +363,13 @@ a {
 
 .catalog-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+.catalog-list {
+  list-style: none;
+  background-color: #f9f5f0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .buy-button {
@@ -385,8 +431,11 @@ a {
   color: #ffffff;
 }
 
-.manufacturers-list li{
+.manufacturers-list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .manufacturers-item {
@@ -414,6 +463,7 @@ a {
   text-align: left;
   color: #000000;
   background-color: #f4f7f9;
+  margin-left: 130px;
 }
 
 .service h2 {
@@ -461,6 +511,16 @@ a {
   color: #000000;
 }
 
+.slider-service {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-service a{
+  padding-left: 23px;
+  vertical-align: middle;
+}
+
 .company h2,
 .contacts h2,
 .hammer-description h2 {
@@ -484,6 +544,18 @@ a {
   color: #000000;
 }
 
+.technomart-description {
+  display: flex;
+  margin-left: 130px;
+  margin-right: 130px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company {
+  max-width: 519px;
+}
+
 .company a {
   width: 220px;
   height: 38px;
@@ -502,18 +574,25 @@ a {
   color: #ffffff;
 }
 
+.menu-container {
+  margin: 0 auto;
+}
+
 .logo-footer {
   width: 220px;
   height: 68px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  margin-left: 130px;
+
   text-align: center;
   vertical-align: middle;
 }
 
 .footer-navigation {
   background-color: #32425c;
+  display: flex;
+  flex-direction: row;
+  padding-left: 130px;
 }
 
 .footer-navigation ul{
@@ -536,6 +615,17 @@ a {
   color: rgba(241, 245, 247, 0.5);
 }
 
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-user-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 23px;
+}
+
 .footer-contacts a:active{
   color: #ee3643;
 }
@@ -552,6 +642,11 @@ a {
 
 .footer-contacts {
   background-color: #293449;
+  display: flex;
+  flex-direction: row;
+  padding-left: 131px;
+  padding-right: 145px;
+  justify-content: space-between;
 }
 
 .footer-social ul {
