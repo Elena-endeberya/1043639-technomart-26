@@ -24,7 +24,7 @@
          <a href="tel:78126660266" class="phone-number">+7 (812) 666-02-66</a>
          <p>г.Санкт-Перербург, Б. Конюшенная д. 19/8</p>
        </div>
-       <div class="">
+       <div class="authorization">
          <a href="" class="log-in">Войти</a>
          <a href="" class="register">Регистрация</a>
        </div>
@@ -44,21 +44,28 @@
    <main>
      <section class="user-menu">
        <ul class="user-menu-box">
-         <li class="materials">Материалы
+         <li class="materials">
+           <p>Материалы</p>
            <a href="">На любой вкус</a>
-          <img src="img/new_flag.svg" alt="Новинки в каталоге материалы">
+           <img src="img/new_flag.svg" alt="Новинки в каталоге материалы" class="new">
          </li>
-         <li class="tool">Инструмент
+         <li class="tool">
+           <p>Инструмент</p>
            <a href="">На все случаи</a>
          </li>
-         <li class="equipment">Техника
+         <li class="equipment">
+           <p>Техника</p>
            <a href="">Для стройки</a>
          </li>
-         <li class="discounts">Скидки 50%
-           <a href="">На 350 товаров</a>
+         <li class="discounts">
+           <div class="column-discounts">
+             <p>Скидки 50%</p>
+             <a href="">На 350 товаров</a></div>
          </li>
-         <li class="delivery">Доставка
-            <a href="">Бесплатно</a>
+         <li class="delivery">
+           <div class="column-delivery">
+             <p>Доставка</p>
+             <a href="">Бесплатно</a></div>
          </li>
        </ul>
      </section>
@@ -79,62 +86,66 @@
        <button class="button gallery-button gallery-button-switch-2" type="button">Точка 2</button>
      </section>
      <section class="catalog">
-       <h2 class="catalog-header">Популярные товары</h2>
-       <a href="" class="all-catalog-list">Все популярные товары</a>
+       <div class="popular">
+         <h2 class="catalog-header">Популярные товары</h2>
+         <a href="" class="all-catalog-list">Все популярные товары</a>
+       </div>
        <ul class="catalog-list">
          <li class="catalog-item">
-           <h3>Перфоратор Bosch BFG 9000</h3>
            <img src="img/hammer-drill-4.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
-           <p class="catalog-item-price">
+           <h3>Перфоратор Bosch BFG 9000</h3>
+           <div class="catalog-item-price">
              <del>32 500 Р.</del>
-             <b>25 500Р.</b>
-           </p>
-           <div>
+             <p>25 500Р.</p>
+           </div>
+           <div class="actions">
              <a href="" class="buy-button">Купить</a>
              <a href="" class="bookmark-button">В закладки</a>
            </div>
          </li>
          <li class="catalog-item">
-           <h3>Перфоратор Bosch BFG 3000</h3>
            <img src="img/hammer-drill-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
-           <p class="catalog-item-price">
+           <h3>Перфоратор Bosch BFG 3000</h3>
+           <div class="catalog-item-price">
              <del>22 500 Р.</del>
-             <b>15 500Р.</b>
-           </p>
-           <div>
+             <p>15 500Р.</p>
+           </div>
+           <div class="actions">
              <a href="" class="buy-button">Купить</a>
              <a href="" class="bookmark-button">В закладки</a>
            </div>
          </li>
          <li class="catalog-item">
-           <h3>Перфоратор Bosch BFG 6000</h3>
            <img src="img/hammer-drill-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
-           <p class="catalog-item-price">
+           <h3>Перфоратор Bosch BFG 6000</h3>
+           <div class="catalog-item-price">
              <del>30 500 Р.</del>
-             <b>25 500Р.</b>
-           </p>
-           <div>
+             <p>25 500Р.</p>
+           </div>
+           <div class="actions">
              <a href="" class="buy-button">Купить</a>
              <a href="" class="bookmark-button">В закладки</a>
            </div>
          </li>
          <li class="catalog-item">
-           <h3>Перфоратор Bosch BFG 2000</h3>
            <img src="img/hammer-drill-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
-           <p class="catalog-item-price">
-             <b>12 500Р.</b>
-           </p>
-           <div>
+           <h3>Перфоратор Bosch BFG 2000</h3>
+           <div class="catalog-item-price">
+             <p>12 500Р.</p>
+           </div>
+           <div class="actions">
              <a href="" class="buy-button">Купить</a>
              <a href="" class="bookmark-button">В закладки</a>
            </div>
-           <img src="img/new_flag.svg" alt="Новый товар в каталоге">
+           <img src="img/new_flag.svg" alt="Новый товар в каталоге" class="new">
          </li>
        </ul>
      </section>
      <section class="manufacturers">
-       <h2 class="manufacturers-header">Популярные производители</h2>
-       <a href="" class="all-manufacturers-list">Все популярные производители</a>
+       <div class="popular">
+         <h2 class="manufacturers-header">Популярные производители</h2>
+         <a href="" class="all-manufacturers-list">Все популярные производители</a>
+       </div>
        <ul class="manufacturers-list">
          <li class="manufacturers-item">
            <img src="img/bosch.png" alt="Производитель Bosch">
@@ -166,24 +177,32 @@
        <h2>Сервисы</h2>
        <p>Хороший интернет-магазин отличается от плохого не только ценами!
        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-       <div class="slider-service">
-         <a href="" class="slider-service-active">Доставка</a>
-         <a href="" class="">Гарантия</a>
-         <a href="" class="">Кредит</a>
+       <div class="service-choice">
+         <div class="slider-service">
+           <a href="" class="slider-service-active">Доставка</a>
+           <a href="" class="">Гарантия</a>
+           <a href="" class="">Кредит</a>
+         </div>
+         <section class="service-description">
+           <div class="delivery">
+             <h3 class="title-delivery">Доставка</h3>
+             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+             Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+           </div>
+           <div class="guarantee">
+             <h3 class="title-guarantee">Гарантия</h3>
+             <p>Если купленный у нас товар поломается или заискрит,
+             а также в случае пожара, спровоцированного его возгоранием,
+             вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+             Дом уж восстановите как-нибудь сами.</p>
+           </div>
+           <div class="credit">
+             <h3 class="title-credit">Кредит</h3>
+             <p>Залезть в долговую яму стало проще!
+             Кредитные консультанты придут вам на помощь.</p>
+           </div>
+         </section>
        </div>
-       <section class="service-description">
-         <h3>Доставка</h3>
-         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-         Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-         <h3>Гарантия</h3>
-         <p>Если купленный у нас товар поломается или заискрит,
-         а также в случае пожара, спровоцированного его возгоранием,
-         вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-         Дом уж восстановите как-нибудь сами.</p>
-         <h3>Кредит</h3>
-         <p>Залезть в долговую яму стало проще!
-         Кредитные консультанты придут вам на помощь.</p>
-       </section>
      </section>
      <div class="technomart-description">
        <section class="company">
@@ -202,9 +221,9 @@
        <section class="contacts">
          <h2>Контакты</h2>
          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-         <a>
+         <div>
            <img src="img/map.png" width="300" height="158" alt="Карта">
-         </a>
+         </div>
          <a href="">Заблудились? Напишите нам!</a>
        </section>
      </div>
