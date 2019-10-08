@@ -6,6 +6,21 @@ body {
   background-color: #f4f7f9;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-title {
   color: #ee3643;
   font-size: 16px;
@@ -23,6 +38,7 @@ a {
 
 .main-header {
   background-color: #f4f7f9;
+  height: 320px;
 }
 
 .menu-background {
@@ -281,7 +297,8 @@ a {
   justify-content: space-between;
   min-height: 60px;
   align-items: strech;
-  margin: 0;
+  margin-top: 44px;
+  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -370,6 +387,8 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 53px;
 }
 
 .user-menu-box li {
@@ -392,7 +411,12 @@ a {
   opacity: 0.1;
   background-color: #000000;
   color: #ffffff;
-  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .user-menu-box a:hover {
@@ -408,6 +432,9 @@ a {
   width: 300px;
   height: 123px;
   position: relative;
+  background-image: url(img/icon-materials.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .materials .new,
@@ -421,19 +448,27 @@ a {
   background-color: #3bbce3;
   width: 300px;
   height: 123px;
+  background-image: url(img/icon-tool.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+
 }
 
 .equipment {
   background-color: #dc91d8;
   width: 300px;
   height: 123px;
+  background-image: url(img/icon-equipment.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .discounts,
-.delivery {
+.delivery  {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+
 }
 
 .column-discounts {
@@ -441,6 +476,9 @@ a {
   width: 300px;
   background-color: #8ed78f;
   margin-top: 20px;
+  background-image: url(img/icon-discounts.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .column-delivery {
@@ -448,13 +486,36 @@ a {
   width: 300px;
   background-color: #ffc047;
   margin-top: 20px;
+  background-image: url(img/icon-delivery.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .slider-tools {
   position: relative;
   width: 940px;
   margin: 0 auto;
-  top: -281px;
+  padding: 0;
+  top: -320px;
+}
+
+.slider-tools h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 26px;
+  padding-top: 26px;
+}
+
+.slider-tools p {
+  padding: 0;
+  font-size: 18px;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 26px;
+  margin-top: -23px;
 }
 
 .slider-drill {
@@ -473,13 +534,24 @@ a {
   height: 266px;
 }
 
+.gallery-button{
+  display: flex;
+}
+
 .slider-button {
   width: 195px;
   height: 38px;
+  justify-content: center;
+  margin-top: 85px;
+  margin-left: 25px;
   background-color: #ee3643;
   font-size: 14px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 
 .slider-button:hover {
@@ -498,6 +570,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .catalog-header,
@@ -512,8 +587,11 @@ a {
   width: 253px;
   height: 38px;
   background-color: #ee3643;
-  text-align: center;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
 }
 
 .catalog-index {
@@ -650,6 +728,9 @@ a {
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .manufacturers-item:hover {
@@ -667,6 +748,7 @@ a {
   background-color: #f4f7f9;
   width: 940px;
   margin: 0 auto;
+  padding-top: 68px;
 }
 
 .service-choice {
@@ -680,6 +762,8 @@ a {
 
 .service h2 {
   font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .service p {
@@ -710,10 +794,11 @@ a {
   background-color: #293449;
 }
 
-.service h3 {
+.service-description h3 {
   font-size: 36px;
   text-align: left;
   color: #32425c;
+  font-weight: normal;
 }
 
 .service p {
@@ -806,7 +891,13 @@ a {
   font-family: "PTSans";
   font-size: 13px;
   text-align: left;
+  line-height: 1.85;
+  font-weight: normal;
   color: #000000;
+}
+
+.contacts p {
+  width: 179px;
 }
 
 .company li {
@@ -828,24 +919,31 @@ a {
   width: 519px;
 }
 
+.company-button {
+  width: 220px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.contacts-button {
+  width: 300px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
 .company a,
 .contacts a  {
   background-color: #ee3643;
   font-size: 14px;
   text-align: center;
   color: #ffffff;
-  padding: 13px;
   text-transform: uppercase;
-}
-
-.company a {
-  padding-left: 41px;
-  padding-right: 40px;
-}
-
-.contacts a {
-  padding-left: 63px;
-  padding-right: 59px;
 }
 
 .footer-container {
@@ -857,6 +955,9 @@ a {
   height: 68px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-navigation {
@@ -887,11 +988,13 @@ a {
 
 .footer-menu {
   display: flex;
+  padding-top: 32px;
 }
 
 .footer-user-menu {
   display: flex;
   margin-left: 23px;
+  padding-top: 10px;
 }
 
 .footer-menu li,
@@ -907,9 +1010,9 @@ a {
    color: #ffd180;
 }
 
-.footer-adress {
-  font-size: 18px;
-  text-align: left;
+.footer-adress p{
+  padding-top: 22px;
+  padding-bottom: 53px;
   color: #f3f7f9;
 }
 
@@ -920,6 +1023,8 @@ a {
 .footer-contacts {
   width: 940px;
   margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 19px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1039,4 +1144,29 @@ legend {
   margin: 0 auto;
   height: 261px;
   background-color: #f4f7f9;
+}
+
+.footer-social ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer-social li{
+
+  margin-right: 15px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #293449;
+  background-image: url(img/Shape.svg);
+  background-repeat: no-repeat;
 }
