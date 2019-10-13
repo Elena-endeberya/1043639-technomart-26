@@ -24,12 +24,12 @@
        <h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
        <div class="adress">
          <a href="tel:78125550555" class="phone-number">+7 (812) 555-05-55</a>
-         <p>г.Санкт-Перербург, Б. Конюшенная д. 19/8</p>
+         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
        </div>
-       <div class="authorization">
+       <section class="authorization">
          <a href="" class="log-in">Войти</a>
          <a href="" class="register">Регистрация</a>
-       </div>
+       </section>
      </section>
      <nav  class="main-navigation">
        <ul>
@@ -48,7 +48,7 @@
        <ul class="user-menu-box">
          <li class="materials">
            <p>Материалы</p>
-           <a href="">На любой вкус</a>
+           <a href="" >На любой вкус</a>
            <img src="img/new_flag.svg" alt="Новинки в каталоге материалы" class="new">
          </li>
          <li class="tool">
@@ -83,11 +83,15 @@
          <a href="" class="slider-button">Открыть каталог</a>
        </section>
      </section>
-     <section class="gallery-button">
-       <button class="button gallery-button gallery-button-left" type="button">Влево</button>
-       <button class="button gallery-button gallery-button-right" type="button">Вправо</button>
-       <button class="button gallery-button gallery-button-switch-1" type="button">Точка 1</button>
-       <button class="button gallery-button gallery-button-switch-2" type="button">Точка 2</button>
+     <section class="visually-hidden slider-button">
+       <button class="slider-button-left" type="button">Влево</button>
+       <button class="slider-button-right" type="button">Вправо</button>
+       <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+       <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+       <div class="slider-controls">
+         <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+         <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+       </div>
      </section>
      <section class="catalog-index">
        <div class="popular">
@@ -293,24 +297,30 @@
        </div>
      </div>
    </footer>
-   <section class="modal modal-login">
-     <h2 class="vissually-hidden">Обратная связь</h2>
-     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-       <p>
-         <label class="vissually-hidden" for="user-name">Ваше имя:</label>
-         <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+   <section class=" modal modal-login">
+     <h2 class="visually-hidden">Обратная связь</h2>
+     <form class=" modal-form" action="https://echo.htmlacademy.ru" method="post">
+       <div class="user-container">
+         <p>
+           <label for="user-name">Ваше имя:</label>
+           <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+         </p>
+         <p>
+           <label for="user-email">Ваш e-mail:</label>
+           <input id="user-email" type="text" name="email" placeholder="email@example.com">
+         </p>
+       </div>
+       <p class="user-letter">
+         <label for="user-letter">Текст письма:</label>
+         <input id="user-letter" type="text" name="letter"  placeholder="В свободной форме">
        </p>
-       <p>
-         <label class="vissually-hidden" for="user-email">Ваш e-mail:</label>
-         <input id="user-email" type="text" name="email" placeholder="email@example.com">
-       </p>
-       <p>
-         <label class="vissually-hidden" for="user-letter">Текст письма:</label>
-         <input id="user-letter" type="text" name="letter" placeholder="В свободной форме">
-       </p>
-      <button class="modal-form-button button" type="submit">Отправить</button>
+      <div class="form-button-container">
+        <button class="modal-form-button" type="submit">Отправить</button>
+      </div>
      </form>
-     <button class="modal-close" type="button">Закрыть</button>
+     <button class="modal-close" type="button">
+       <span class="visually-hidden">Закрыть</span>
+     </button>
    </section>
  </body>
 </html>

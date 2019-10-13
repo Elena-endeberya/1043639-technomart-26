@@ -26,8 +26,14 @@
           <a href="tel:78126660266" class="phone-number">+7 (812) 666-02-66</a>
           <p>г.Санкт-Перербург, Б. Конюшенная д. 19/8</p>
         </div>
-        <div class="user-block">
-          <span>Равшан Джамшутович</span>
+        <div class="user-info">
+          <div class="user-block">
+            <span>Равшан Джамшутович</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                <path fill="#32425c" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+            </svg>
+
+          </div>
           <div class="user-cabinet">
             <a href="" class="my-orders">Мои заказы</a>
             <a href="" class="personal-account">Личный кабинет</a>
@@ -48,7 +54,7 @@
     </header>
     <main>
       <div class="page-layout">
-        <span><a href="">Главная</a></span>
+        <span><a href="" class="page-home"></a></span>
         <span><a href="">Каталог</a></span>
         <span><a href="">Инструмент</a></span>
         <span><a href="">Перфораторы</a></span>
@@ -64,32 +70,32 @@
                 <input type="range" id="price" min="0" max="30000">30000
               </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="manufacturer-list">
               <legend>Производители</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
+                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
                   <label for="filter-Bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
-                  <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interscol" id="filter-Interscol">
+                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Interscol" id="filter-Interscol">
                   <label for="filter-Interscol">Interscol</label>
                 </li>
                 <li class="filter-option">
-                  <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
                   <label for="filter-Makita">Makita</label>
                 </li>
                 <li class="filter-option">
-                  <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
+                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
                   <label for="filter-Dewalt">Dewalt</label>
                 </li>
                   <li class="filter-option">
-                  <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
                   <label for="filter-Hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset  class="power-list">
               <legend>Питание</legend>
               <ul>
                 <li  class="filter-option">
@@ -155,6 +161,7 @@
                 </div>
               </li>
               <li class="catalog-item">
+                <img src="img/hammer-drill-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
                 <h3>Перфоратор Bosch BFG 2000</h3>
                 <div class="catalog-item-price">
                   <br>
@@ -251,12 +258,14 @@
           <li class="pagination-item"><a href="">3</a></li>
           <li class="pagination-item"><a href="">Следующая</a></li>
         </ul>
-        <section class="hammer-description">
-        <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-      </section>
+        <div class="hammer-description-container">
+          <section class="hammer-description">
+          <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </section>
+        </div>
     </main>
     <footer  class="main-footer">
       <div class="footer-container">
@@ -296,9 +305,15 @@
           </p>
           <div  class="footer-social">
             <ul>
-              <li><a href="">Вконтакте</a></li>
-              <li><a href="">Фейсбук</a></li>
-              <li><a href="">Инстаграмм</a></li>
+              <li><a href="" class="social-button"><span class="visually-hidden">Вконтакте</span>
+                <img src="img/icon-vk.svg" width="26" height="15" alt="Логотип Вконтакте">
+              </a></li>
+              <li><a href="" class="social-button"><span class="visually-hidden">Фейсбук</span>
+                <img src="img/icon-fb.svg" width="12" height="22" alt="Логотип Фейсбук">
+              </a></li>
+              <li><a href="" class="social-button"><span class="visually-hidden">Инстаграмм</span>
+                <img src="img/icon-insta.svg" width="21" height="21" alt="Логотип Инстаграмм">
+              </a></li>
             </ul>
           </div>
           <div>
@@ -312,13 +327,17 @@
         </div>
       </div>
     </footer>
-    <section class="modal add-cart">
-      <h2>Товар добавлен в корзину!</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <button type="button" name="submit">Оформить заказ</button>
-        <button type="button" name="button">Продолжить покупки</button>
+    <section class="modal modal-add-cart">
+      <h2 class="title-art-cart">Товар добавлен в корзину!</h2>
+      <form  action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-button-container">
+          <button type="button" name="submit" class="button-make-order">Оформить заказ</button>
+          <button type="button" name="button" class="button-continue-purchases">Продолжить покупки</button>
+        </div>
       </form>
-      <button class="modal-close" type="button" aria-label="Закрыть">X</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
    </body>
 </html>
