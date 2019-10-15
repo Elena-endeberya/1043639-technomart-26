@@ -188,9 +188,9 @@
        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
        <div class="service-choice">
          <div class="slider-service">
-           <a href="" class="slider-service-active">Доставка</a>
-           <a href="" class="">Гарантия</a>
-           <a href="" class="">Кредит</a>
+           <a href="" class="slider-switch slider-service-active">Доставка</a>
+           <a href="" class="slider-switch">Гарантия</a>
+           <a href="" class="slider-switch">Кредит</a>
          </div>
          <section class="service-description">
            <div class="delivery-service">
@@ -231,7 +231,7 @@
          <h2>Контакты</h2>
          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
          <div>
-           <img src="img/map.png" width="300" height="158" alt="Карта">
+           <img src="img/map.png" width="300" height="158" class="contacts-modal-map" alt="Карта">
          </div>
          <a href="" class="contacts-button">Заблудились? Напишите нам!</a>
        </section>
@@ -303,7 +303,7 @@
        <div class="user-container">
          <p>
            <label for="user-name">Ваше имя:</label>
-           <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+           <input id="user-name" type="text" name="fio" placeholder="Имя Фамилия">
          </p>
          <p>
            <label for="user-email">Ваш e-mail:</label>
@@ -317,10 +317,23 @@
       <div class="form-button-container">
         <button class="modal-form-button" type="submit">Отправить</button>
       </div>
+
      </form>
      <button class="modal-close" type="button">
        <span class="visually-hidden">Закрыть</span>
      </button>
    </section>
+   <section class="modal modal-map">
+     <h2 class="visually-hidden">Как до нас добраться</h2>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300267!2d30.32085871551845!3d59.9387191690549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1571173086305!5m2!1sru!2sua" width="940" height="447" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+     <p><img src="img/map.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+   </section>
+
+   <script src="js/popup.js"></script>
+   <script src="js/map.js"></script>
  </body>
 </html>
