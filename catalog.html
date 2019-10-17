@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,7 +12,7 @@
     <header  class="main-header">
       <div class="menu-background">
         <section  class="menu-header">
-           <a class="logo-header">
+           <a  href="index.html" class="logo-header">
              <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
            </a>
           <a href="" class="find">Поиск</a>
@@ -55,51 +56,66 @@
         <span><a href="">Инструмент</a></span>
         <span><a href="">Перфораторы</a></span>
       </div>
+      <div class="category-container">
       <h2 class="category">Перфораторы</h2>
+      </div>
       <div class="catalog-sorting">
         <section class="filters">
           <h3>Фильтр:</h3>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Цена</legend>
-              <label for="price">0
-                <input type="range" id="price" min="0" max="30000">30000
-              </label>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                  <label class="content-price"> <input name="content-price" type="text" value="—"></label>
+                  <label class="max-price"><input name="max-price" type="text" value="30000"></label>-->
+                </div>
+              </div>
             </fieldset>
+            <hr>
             <fieldset class="manufacturer-list">
-              <legend>Производители</legend>
+              <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
                   <label for="filter-Bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
-                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Interscol" id="filter-Interscol">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interscol" id="filter-Interscol">
                   <label for="filter-Interscol">Interscol</label>
                 </li>
                 <li class="filter-option">
-                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
                   <label for="filter-Makita">Makita</label>
                 </li>
                 <li class="filter-option">
-                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
                   <label for="filter-Dewalt">Dewalt</label>
                 </li>
                   <li class="filter-option">
-                  <input class=" filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
                   <label for="filter-Hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
+            <hr>
             <fieldset  class="power-list">
-              <legend>Питание</legend>
+              <legend>Питание:</legend>
               <ul>
                 <li  class="filter-option">
-                  <input class="vissually-hidden filter-input filter-input-radio" type="radio" name="supply" value="Аккумуляторные" id="filter-rechargeable" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="Аккумуляторные" id="filter-rechargeable" checked>
                   <label for="filter-rechargeable">Аккумуляторные</label>
                 </li>
                 <li  class="filter-option">
-                  <input class="vissually-hidden filter-input filter-input-radio" type="radio" name="supply" value="Сетевые" id="filter-network">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="Сетевые" id="filter-network">
                   <label for="filter-network">Сетевые</label>
                 </li>
               </ul>
@@ -110,7 +126,7 @@
          <div class="catalog-page">
            <section class="sorting">
              <h3>Сортировка:</h3>
-             <ul>
+             <ul class="sorting-catalog">
                <li class="sorting-item">
                  <a href="">По цене</a>
                </li>
@@ -121,12 +137,12 @@
                  <a href="">По функционалу</a>
                </li>
              </ul>
-             <ul>
-               <li class="sorting-item">
-                 <a href="">По возрастанию</a>
+             <ul class="sorting-rules">
+               <li class="sorting-item ascending">
+               <a href="" class="visually-hidden">По возрастанию</a>
                </li>
-               <li class="sorting-item">
-                 <a href="">По убыванию</a>
+               <li class="sorting-item descending">
+                 <a href="" class="visually-hidden">По убыванию</a>
                </li>
              </ul>
            </section>

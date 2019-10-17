@@ -3,7 +3,8 @@
  <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+  <!--  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
  </head>
@@ -75,12 +76,12 @@
        <section class="slider-drill">
          <h2>Дрели</h2>
          <p>Соседям на радость!</p>
-         <a href="" class="slider-button">Открыть каталог</a>
+         <a  href="catalog.html" class="slider-button">Открыть каталог</a>
        </section>
        <section class="slider-hammer">
          <h2>Перфораторы</h2>
          <p>Настоящие мужские игрушки</p>
-         <a href="" class="slider-button">Открыть каталог</a>
+         <a  href="catalog.html" class="slider-button">Открыть каталог</a>
        </section>
      </section>
      <section class="visually-hidden slider-button">
@@ -93,6 +94,7 @@
          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
        </div>
      </section>
+
      <section class="catalog-index">
        <div class="popular">
          <h2 class="catalog-header">Популярные товары</h2>
@@ -188,9 +190,9 @@
        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
        <div class="service-choice">
          <div class="slider-service">
-           <a href="" class="slider-switch slider-service-active">Доставка</a>
-           <a href="" class="slider-switch">Гарантия</a>
-           <a href="" class="slider-switch">Кредит</a>
+           <a href="" class="slider-switch slider-service-active delivery">Доставка</a>
+           <a href="" class="slider-switch slider-service-inactive guarantee">Гарантия</a>
+           <a href="" class="slider-switch slider-service-inactive credit">Кредит</a>
          </div>
          <section class="service-description">
            <div class="delivery-service">
@@ -335,5 +337,6 @@
 
    <script src="js/popup.js"></script>
    <script src="js/map.js"></script>
+
  </body>
 </html>
