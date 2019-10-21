@@ -3,8 +3,7 @@
  <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-  <!--  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">-->
-<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
  </head>
@@ -72,51 +71,37 @@
          </li>
        </ul>
      </section>
-    <!--    <section class="slider-tools">
-  <!--     <section class="slider-drill">
-         <h2>Дрели</h2>
-         <p>Соседям на радость!</p>
-         <a  href="catalog.html" class="slider-button">Открыть каталог</a>
-       </section>
-       <section class="slider-hammer">
-         <h2>Перфораторы</h2>
-         <p>Настоящие мужские игрушки</p>
-         <a  href="catalog.html" class="slider-button">Открыть каталог</a>
-       </section>-->
-       <section class="slider-container">
-         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-         <div class="slider-controls">
-           <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-         </div>
-
-         <ul class="slider-list">
-          <li class="slider-item">
-            <h2>Дрели</h2>
-            <p>Соседям на радость!</p>
-            <a  href="catalog.html" class="slider-button">Открыть каталог</a>
-          </li>
-          <li class="slider-item">
-            <h2>Перфораторы</h2>
-            <p>Настоящие мужские игрушки</p>
-            <a  href="catalog.html" class="slider-button">Открыть каталог</a>
-          </li>
-        </ul>
-        <button class=" slider-button-left" type="button">Влево</button>
-        <button class=" slider-button-right" type="button">Вправо</button>
-
-       </section>
-
+     <section class="slider-container">
+       <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+       <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+       <div class="slider-controls">
+         <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+         <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+       </div>
+       <ul class="slider-list">
+         <li class="slider-item">
+           <h2>Дрели</h2>
+           <p>Соседям на радость!</p>
+           <a  href="catalog.html" class="slider-button">Открыть каталог</a>
+         </li>
+         <li class="slider-item">
+           <h2>Перфораторы</h2>
+           <p>Настоящие мужские игрушки</p>
+           <a  href="catalog.html" class="slider-button">Открыть каталог</a>
+         </li>
+       </ul>
+      <button class=" slider-button-left" type="button"><span class="visually-hidden">Влево</span></button>
+      <button class=" slider-button-right" type="button"><span class="visually-hidden">Вправо</span></button>
+     </section>
      <section class="catalog-index">
        <div class="popular">
          <h2 class="catalog-header">Популярные товары:</h2>
          <a href="" class="all-catalog-list">Все популярные товары</a>
        </div>
        <ul class="catalog-list">
-         <li class="catalog-item">
-           <img src="img/hammer-drill-4.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
-           <h3>Перфоратор Bosch BFG 9000</h3>
+         <li class="catalog-item-i">
+           <img src="img/hammer-drill-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+           <h3>Перфоратор BOSCH BFG 9000</h3>
            <div class="catalog-item-price">
              <del>32 500 Р.</del>
              <p>25 500Р.</p>
@@ -126,9 +111,9 @@
              <a href="" class="bookmark-button">В закладки</a>
            </div>
          </li>
-         <li class="catalog-item">
-           <img src="img/hammer-drill-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
-           <h3>Перфоратор Bosch BFG 3000</h3>
+         <li class="catalog-item-i">
+           <img src="img/hammer-drill-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+           <h3>Перфоратор BOSCH BFG 3000</h3>
            <div class="catalog-item-price">
              <del>22 500 Р.</del>
              <p>15 500Р.</p>
@@ -138,9 +123,9 @@
              <a href="" class="bookmark-button">В закладки</a>
            </div>
          </li>
-         <li class="catalog-item">
-           <img src="img/hammer-drill-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
-           <h3>Перфоратор Bosch BFG 6000</h3>
+         <li class="catalog-item-i">
+           <img src="img/hammer-drill-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+           <h3>Перфоратор BOSCH BFG 6000</h3>
            <div class="catalog-item-price">
              <del>30 500 Р.</del>
              <p>25 500Р.</p>
@@ -150,9 +135,9 @@
              <a href="" class="bookmark-button">В закладки</a>
            </div>
          </li>
-         <li class="catalog-item">
-           <img src="img/hammer-drill-3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
-           <h3>Перфоратор Bosch BFG 2000</h3>
+         <li class="catalog-item-i">
+           <img src="img/hammer-drill-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+           <h3>Перфоратор BOSCH BFG 2000</h3>
            <div class="catalog-item-price">
              <br>
              <p>12 500Р.</p>
@@ -168,7 +153,7 @@
      <section class="manufacturers">
        <div class="popular">
          <h2 class="manufacturers-header">Популярные производители:</h2>
-         <a href="" class="all-manufacturers-list">Все популярные производители</a>
+         <a href="" class="all-manufacturers-list">Все производители</a>
        </div>
        <ul class="manufacturers-list">
          <li class="manufacturers-item">
@@ -200,8 +185,8 @@
      <div class="service-container">
        <section class="service">
          <h2>Сервисы</h2>
-         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-         <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+         <p>Хороший интернет-магазин отличается от плохого не только ценами!
+         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
          <div class="service-choice">
            <div class="slider-service">
              <a href="" class="slider-switch slider-service-active">Доставка</a>
@@ -211,8 +196,10 @@
            <section class="service-description">
              <div class="delivery-service">
                <h3 class="title-delivery">Доставка</h3>
-               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-               Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+               <p>Мы с удовольствием доставим ваш товар прямо
+                 к вашему подъезду совершенно бесплатно!
+               Ведь мы неплохо заработаем,
+               поднимая его на ваш этаж!</p>
              </div>
              <div class="guarantee-service">
                <h3 class="title-guarantee">Гарантия</h3>
@@ -232,12 +219,13 @@
      </div>
      <div class="technomart-description">
        <section class="company">
-         <h2>Компания "Техномарт"</h2>
+         <h2>КОМПАНИЯ «Техномарт»</h2>
          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-         <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-           Техномарт работает со многими транспортными компаниями:</p>
-         <ul>
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+         <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+           Техномарт работает со многими транспортными компаниями:
+         </p>
+         <ul class="transport-companies">
            <li>Деловые линии</li>
            <li>Автотрейдинг</li>
            <li>ЖелДорЭкспедиция</li>
@@ -303,13 +291,13 @@
              </a></li>
            </ul>
          </div>
-         <div>
-           <p>Обратная связь:</p>
-           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+         <div  class="email">
+           <p>Обратная связь:
+           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
          </div>
-         <div>
-           <p>Разработано — </p>
-           <a href="https://htmlacademy.ru">HTML Academy</a>
+         <div class="developed-by">
+           <p>Разработано —
+           <a href="https://htmlacademy.ru">HTML Academy</a></p>
          </div>
        </div>
      </div>
@@ -334,7 +322,6 @@
       <div class="form-button-container">
         <button class="modal-form-button" type="submit">Отправить</button>
       </div>
-
      </form>
      <button class="modal-close" type="button">
        <span class="visually-hidden">Закрыть</span>
@@ -344,14 +331,11 @@
      <h2 class="visually-hidden">Как до нас добраться</h2>
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300267!2d30.32085871551845!3d59.9387191690549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1571173086305!5m2!1sru!2sua" width="940" height="447" style="border:0;" allowfullscreen=""></iframe>
      <p><img src="img/map.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-
     <button class="modal-close" type="button">
       <span class="visually-hidden">Закрыть</span>
     </button>
    </section>
-
    <script src="js/popup.js"></script>
    <script src="js/map.js"></script>
-
  </body>
 </html>
