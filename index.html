@@ -14,7 +14,10 @@
           <a class="logo-header">
             <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
           </a>
-          <a href="" class="find">Поиск:</a>
+          <form  class="find-container">
+            <label for="find" class="find-label"></label>
+            <input id="find" class="find" type="search" placeholder="Поиск" >
+          </form>
           <a href="" class="bookmarks">Закладки: 0</a>
           <a href="" class="cart">Корзина: 0</a>
           <a href="" class="make-order">Оформить заказ</a>
@@ -32,7 +35,7 @@
         </section>
       </section>
       <nav  class="main-navigation">
-        <ul>
+        <ul  class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -46,10 +49,10 @@
     <main>
       <section class="user-menu">
         <ul class="user-menu-box">
-          <li class="materials">
+          <li class="materials new-product">
             <p>Материалы</p>
             <a href="" >На любой вкус</a>
-            <img src="img/new_flag.svg" width="60" height="59" alt="Новинки в каталоге материалы" class="new">
+          <!--  <img src="img/new_flag.svg" width="60" height="59" alt="Новинки в каталоге материалы" class="new">-->
           </li>
           <li class="tool">
             <p>Инструмент</p>
@@ -105,8 +108,8 @@
             <img src="img/hammer-drill-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <div class="catalog-item-price">
-              <del>32 500 Р.</del>
-              <p>25 500Р.</p>
+              <del>32500 Р.</del>
+              <p>25500 Р.</p>
             </div>
             <div class="actions">
               <a href="" class="buy-button">Купить</a>
@@ -117,8 +120,8 @@
             <img src="img/hammer-drill-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <div class="catalog-item-price">
-              <del>22 500 Р.</del>
-              <p>15 500Р.</p>
+              <del>22500 Р.</del>
+              <p>15500 Р.</p>
             </div>
             <div class="actions">
               <a href="" class="buy-button">Купить</a>
@@ -129,26 +132,26 @@
             <img src="img/hammer-drill-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <div class="catalog-item-price">
-              <del>30 500 Р.</del>
-              <p>25 500Р.</p>
+              <del>30500 Р.</del>
+              <p>25500 Р.</p>
             </div>
             <div class="actions">
               <a href="" class="buy-button">Купить</a>
               <a href="" class="bookmark-button">В закладки</a>
             </div>
           </li>
-          <li class="catalog-item-i">
+          <li class="catalog-item-i new-product">
             <img src="img/hammer-drill-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <div class="catalog-item-price">
               <div> </div>
-              <p>12 500Р.</p>
+              <p>12500 Р.</p>
             </div>
             <div class="actions">
               <a href="" class="buy-button">Купить</a>
               <a href="" class="bookmark-button">В закладки</a>
             </div>
-            <img src="img/new_flag.svg"  width="60" height="59" alt="Новый товар в каталоге" class="new">
+            <!--<img src="img/new_flag.svg"  width="60" height="59" alt="Новый товар в каталоге" class="new">-->
           </li>
         </ul>
       </section>
@@ -175,7 +178,7 @@
           </li>
           <li class="manufacturers-item">
             <a>
-              <img src="img/interskol.png" width="220" height="145" alt="Производитель Интерскол">
+              <img src="img/interskol.png" width="200" height="88" alt="Производитель Интерскол">
             </a>
           </li>
           <li class="manufacturers-item">
@@ -220,7 +223,8 @@
               <div class="delivery-service">
                 <h3 class="title-delivery">Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                Ведь мы неплохо заработаем, <br>
+                поднимая его на ваш этаж!</p>
               </div>
               <div class="guarantee-service">
                 <h3 class="title-guarantee">Гарантия</h3>
@@ -241,7 +245,7 @@
       <div class="technomart-description">
         <section class="company">
           <h2>КОМПАНИЯ «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          <p class="shopping">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
             строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p class="delivery-technomart">Мы можем доставить ваш товар в самые отдаленные точки России!
            Техномарт работает со многими транспортными компаниями:
@@ -317,14 +321,14 @@
           </div>
           <div class="developed-by">
             <p>Разработано —
-            <a href="https://htmlacademy.ru">HTML Academy</a></p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
           </div>
         </div>
       </div>
     </footer>
-    <section class=" modal modal-login">
+    <section class="modal modal-login">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form class=" modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="user-container">
           <p>
             <label for="user-name">Ваше имя:</label>
@@ -337,7 +341,7 @@
         </div>
         <p class="user-letter">
           <label for="user-letter">Текст письма:</label>
-          <input id="user-letter" type="text" name="letter"  placeholder="В свободной форме">
+          <textarea  id="user-letter" name="letter"   placeholder="В свободной форме"></textarea>
         </p>
        <div class="form-button-container">
          <button class="modal-form-button" type="submit">Отправить</button>
